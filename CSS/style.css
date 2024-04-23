@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    background: #0d0e1c;
+    box-shadow: 2px 1px 2px gray;
+    padding: 20px 15px;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+     
+}
+ .logo{
+     font-size: 32px;
+     font-weight: bold;
+     font-style: italic;
+}
+input{
+    padding: 7px 5px;
+    outline: none;
+    border: none;
+    background: unset;
+    border-bottom: 1px solid gray;
+    margin-right: 10px;
+    color: white;
+}
+
+button{
+    padding: 7px;
+    background: unset;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background: gray;
+}
+
+main{
+    padding: 2rem;
+   
+}
+#container{
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    gap: 15px;
+}
+
+.card{
+    width: 280px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.card h2,p{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.btnDIV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnDIV button{
+    color: white;
+    background: rgb(36, 29, 29);
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid white;
+}
+button:hover{
+    background: rgb(2, 1, 1);
+}
+@media(max-width:500px) {
+    .logo{
+        font-size: 20px;
+    }
+
+  .card{
+    width: 100%;
+  }
+}
+
+@media(max-width:900px){
+    #container{
+        justify-content: center ;
+    }
+}
